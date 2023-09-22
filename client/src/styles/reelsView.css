@@ -1,0 +1,54 @@
+.reelsview-container {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 100vh;
+}
+
+.reelsview-main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    width: 50%;
+    border-radius: 10px;
+    /* background-color: white; */
+}
+
+.reelsview-left-sidebar, .reelsview-right-sidebar {
+    flex: 1;
+    padding: 20px;
+}
+
+.reelsview-right-sidebar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.create-reels-icon {
+    cursor: pointer;
+}
+
+.reels-icon-info {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.reels-icon-info h3 {
+    margin-left: 2%;
+    color: white;
+}
+
+.reelsview-content {
+    background-color: black;
+    width: 75%;
+    height: 90%;
+    border-radius: 15px;
+}
+
+.carousel-prev-reels {
+    background-color: white;
+    margin-right: 12%;
+}

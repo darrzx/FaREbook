@@ -1,0 +1,37 @@
+type FriendRequests {
+    id: ID!
+    userid: String!
+    requesterid: String!
+}
+
+type Friend {
+    id: ID!
+    userid: String!
+    friendid: String!
+}
+
+input NewFriendRequests {
+    userid: String!
+    requesterid: String!
+}
+
+input NewFriend {
+    userid: String!
+    friendid: String!
+}
+
+extend type Query {
+    getAllFriendRequestsByUserId(userid: ID!): [FriendRequests!]!
+    getAllFriendSuggestionByUserId(userid: ID!): [User!]!
+    getFriendCountByUserId(userid: ID!): Int!
+    getAllFriendByUserId(userid: ID!): [User!]!
+    getAllFriendByUserIdWithStory(userid: ID!): [User!]!
+    checkFriendByUserid(userid: String!, friendid: String!): Boolean!
+    checkFriendRequestByUserid(userid: String!, requesterid: String!): Boolean!
+}
+
+extend type Mutation {
+    createFriend(inputFriends: NewFriend!): Friend!
+    createFriendRequests(inputRequestFriends: NewFriendRequests!): FriendRequests!
+    deleteFriendRequests(id:ID!): FriendRequests!
+}

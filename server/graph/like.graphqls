@@ -1,0 +1,23 @@
+type LikePost{
+    id: ID!
+    postid: String!
+    userid: String!
+    username: String!
+    isLike: Boolean!
+}
+
+input NewLikePost{
+  postid: String!
+  userid: String!
+  username: String!
+  isLike: Boolean!
+}
+
+extend type Query {
+  checkLikeByPost(postid: String!, userid: String!): Boolean!
+  getAllLike: [LikePost!]!
+}
+
+extend type Mutation {
+  createLike(inputLikePost: NewLikePost!): LikePost!
+}

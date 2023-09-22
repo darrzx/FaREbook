@@ -1,0 +1,45 @@
+type Reels {
+  id: ID!
+  userid: String!
+  username: String!
+  video: String!
+  text: String!
+  date: String!
+  commentcount: Int!
+}
+
+type CommentReels{
+    id: ID!
+    reelsid: String!
+    userid: String!
+    username: String!
+    comment: String!
+    date: String!
+}
+
+
+input NewReels {
+  userid: String!
+  username: String!
+  video: String!
+  text: String!
+}
+
+input NewCommentReels{
+    reelsid: String!
+    userid: String!
+    username: String!
+    comment: String!
+}
+
+extend type Query {
+  getReels(id: ID!): Reels!
+  getAllReels: [Reels!]!
+  getAllReelsByUserId(userid: ID!): [Reels!]!
+  getAllCommentByReelsId(id: ID!): [CommentReels!]!
+}
+
+extend type Mutation {
+  createReels(inputReels: NewReels!): Reels!
+  createCommentReels(inputCommentReels: NewCommentReels!): CommentReels!
+}

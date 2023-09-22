@@ -1,0 +1,95 @@
+.forgot-account-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+  flex-direction: column;
+}
+
+.forgot-account-form {
+  background-color: #fff;
+  padding: 35px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 400px;
+}
+
+.forgot-account-header {
+  text-align: center;
+  font-size: 28px;
+  width: 100%;
+}
+
+.forgot-account-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.forgot-account-input {
+  width: 100%;
+  height: 25px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cancel-button {
+  background-color: rgb(206, 204, 204);
+  color: black;
+  padding: 12px;
+  width: 48%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.search-button {
+  background-color: #1877f2;
+  color: #fff;
+  padding: 12px;
+  width: 48%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #1263cd;
+}
+
+.cancel-button:hover {
+  background-color: rgb(152, 151, 151);
+}
+
+.back-to-login-link {
+  text-align: center;
+  color: #125cbd;
+  cursor: pointer;
+}
+
+.back-to-login-link:hover {
+  text-decoration: underline;
+}
+
+.line-forgot {
+  width: 100%;
+  margin: 10px 0;
+}

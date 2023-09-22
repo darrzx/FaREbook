@@ -1,0 +1,23 @@
+type Notification {
+  id: ID!
+  userid: String!
+  username: String!
+  text: String!
+  date: String!
+  status: String!
+}
+
+input NewNotification {
+  userid: String!
+  username: String!
+  text: String!
+}
+
+extend type Query {
+  getAllNotificationByUserId(id: ID!, isAll: Boolean!): [Notification!]!
+  getNotificationCountByStatus(userid: ID!): Int!
+}
+
+extend type Mutation {
+  createNotification(inputNotification: NewNotification!): Notification!
+}

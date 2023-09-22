@@ -1,0 +1,21 @@
+type Message {
+    id: ID!
+    conversationid: String!
+    senderid: String!
+    content: String!
+    date: String!
+}
+
+input NewMessage {
+    conversationid: String!
+    senderid: String!
+    content: String!
+}
+
+extend type Query {
+    getAllMessageByConversationId(conversationid: String): [Message!]!
+}
+
+extend type Mutation {
+    createMessage(inputMessage: NewMessage!): Boolean!
+}

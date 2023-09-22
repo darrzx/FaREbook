@@ -1,0 +1,23 @@
+type LikeComment{
+    id: ID!
+    commentid: String!
+    userid: String!
+    username: String!
+    isLike: Boolean!
+}
+
+input NewLikeComment{
+  commentid: String!
+  userid: String!
+  username: String!
+  isLike: Boolean!
+}
+
+extend type Query {
+  checkLikeByComment(commentid: String!, userid: String!): Boolean!
+  getAllLikeComment: [LikeComment!]!
+}
+
+extend type Mutation {
+  createLikeComment(inputLikeComment: NewLikeComment!): LikeComment!
+}

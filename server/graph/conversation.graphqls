@@ -1,0 +1,26 @@
+type Conversation {
+    id: ID!
+    userid1: String!
+    userid2: String!
+    date: String!
+}
+
+type ConversationHeader {
+    id: ID!
+    user1: User!
+    user2: User!
+}
+
+input NewConversation {
+    userid1: String!
+    userid2: String!
+}
+
+extend type Query {
+    getAllConversationByUserId(userid: String!, name:String): [ConversationHeader!]!
+}
+
+
+extend type Mutation {
+    createConversation(inputConversation: NewConversation!): Conversation!
+}

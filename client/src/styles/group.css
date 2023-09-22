@@ -1,0 +1,129 @@
+.group-container {
+    display: flex;
+    justify-content: center;
+    background-color: var(--body_background);
+    height: 100%;
+}
+
+.group-left-sidebar {
+    flex: 1;
+    padding: 20px;
+    width: 20%;
+    background-color: var(--body_container);
+}
+
+.group-main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 10px;
+    background-color: var(--body_background);
+    margin: 1rem;
+}
+
+.sidebar-search {
+    margin-top: 1rem;
+}
+
+.create-group-button {
+    background-color: #1877F2;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-group-button:hover {
+    background-color: #1466D1;
+}
+
+.link-create-group {
+    color: white;
+}
+
+.all-group-joined-container {
+    margin-top: 1rem;
+    border-top: 1.5px solid #ccc;
+}
+
+.all-group-header-group {
+    margin-top: 1rem;
+}
+
+.groups-mapping {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.groups-each-card {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding: 15px;
+    gap: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.groups-each-card img {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.groups-each-card:hover {
+    background: var(--hover);
+}
+
+.sidebar-header-group h2, .all-group-header-group h3, .card-name {
+    color: var(--font_color);
+}
+
+.post-mapping {
+    width: 50%;
+}
+
+.media-mapping {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.groups-search-mapping {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.groups-search-each-card {
+    background-color: var(--body_container);
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding: 15px;
+    gap: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.groups-search-each-card img {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.groups-search-each-card:hover {
+    background: var(--hover);
+}

@@ -1,0 +1,51 @@
+.notification-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    background-color: var(--body_background);
+    height: 100vh;
+}
+
+.notification-main {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    width: 50%;
+    max-height: 80%;
+    border-radius: 10px;
+    background-color: var(--body_container);
+}
+
+.notification-header {
+    margin: 1rem;
+    color: var(--font_color);
+}
+
+.notification-buttons {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.notification-button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.notification-button-active {
+    background-color: var(--active-background);
+    color: var(--active-button);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+.notiffication-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.notification-all {
+    color: var(--font_color);
+}

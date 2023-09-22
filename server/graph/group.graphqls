@@ -1,0 +1,93 @@
+type Group {
+    id: ID!
+    name: String!
+    privacy: String!
+    profilepic: String!
+    date: String!
+}
+
+type GroupHeader {
+    id: ID!
+    group: Group!
+}
+
+type GroupMember {
+    id: ID!
+    groupid: String!
+    userid: String!
+    role: String!
+}
+
+type GroupInvited {
+    id: ID!
+    groupid: String!
+    userid: String!
+}
+
+type GroupRequestJoin {
+    id: ID!
+    groupid: String!
+    userid: String!
+}
+
+type GroupPost {
+  id: ID!
+  groupid: String!
+  groupname: String!
+  date: String!
+  text: String!
+  privacy: String!
+  commentcount: Int!
+  likecount: Int!
+}
+
+input NewGroup{
+    name: String!
+    privacy: String!
+}
+
+input NewGroupMember{
+    groupid: String!
+    userid: String!
+    role: String!
+}
+
+input NewGroupInvited{
+    groupid: String!
+    userid: String!
+}
+
+input NewGroupRequestJoin{
+    groupid: String!
+    userid: String!
+}
+
+input NewGroupPost {
+  groupid: String!
+  groupname: String!
+  text: String!
+  privacy: String!
+}
+
+extend type Query {
+    getGroup(id:ID!): Group!
+    getAllGroup: [Group!]!
+    getAllGroupByUserId(userid: String!): [GroupHeader!]!
+    getAllGroupByName(name: String): [Group!]!
+    getAllGroupPost(offset: Int, limit: Int, groupids: [String!]!): [GroupPost!]!
+    getAllPostByGroupId(groupid: ID!): [GroupPost!]!
+    getAllUserRequestByGroupId(groupid: ID!): [User!]!
+    checkMemberByUserid(groupid: String!, userid: String!): Boolean!
+    checkRequestByUserid(groupid: String!, userid: String!): Boolean!
+    checkMemberIsAdmin(groupid: String!, userid: String!): Boolean!
+}
+
+extend type Mutation {
+    createGroup(inputGroup: NewGroup!): Group!
+    createGroupMember(inputGroupMember: NewGroupMember!): GroupMember!
+    createGroupInvited(inputGroupInvited: NewGroupInvited!): GroupInvited!
+    createGroupRequest(inputGroupRequest: NewGroupRequestJoin!): GroupRequestJoin!
+    createGroupPost(inputGroupPost: NewGroupPost!, medias: [String!]!): GroupPost!
+    deleteGroupMemberByUserId(groupid: String!, userid:ID!): GroupMember!
+    deleteGroupRequestByUserId(groupid: String!, userid:ID!): GroupRequestJoin!
+}

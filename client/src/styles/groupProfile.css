@@ -1,0 +1,235 @@
+.group-profile-container {
+    display: flex;
+    justify-content: center;
+    background-color: var(--body_background);
+    height: 100%;
+}
+
+.group-profile-left-sidebar {
+    flex: 1;
+    padding: 20px;
+    width: 20%;
+    background-color: var(--body_container);
+}
+
+.group-profile-main-content {
+    width: 80%;
+    border-radius: 10px;
+    background-color: var(--body_background);
+    margin-top: 1rem;
+}
+
+.group-profile-container-head {
+    background-color: var(--body_container);
+    max-width: 80%;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.group-profile-cover-photo img {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.profile-group-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid #e5e5e5;  
+    margin-left: 1rem;
+}
+
+.profile-group-personal {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.profile-group-others {
+    margin: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.group-profile-user-main {
+    margin: 1rem;
+}
+
+.group-profile-user-buttons {
+    display: flex;
+    gap: 1rem;
+    color: var(--font_color);
+}
+
+.profile-privacy {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.group-profile-container-body {
+    background-color: var(--body_background);
+}
+
+.container-body-group-profile {
+    max-width: 80%;
+    margin: 1rem auto;
+}
+
+.image-group-create-post {
+    object-fit: cover;
+}
+
+.post-mapping-group-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.invite-friend-group-button {
+    background-color: #1877F2;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.invite-friend-group-button:hover {
+    background-color: #0a5bc6;
+}
+
+.link-invite-friend-group, .link-leave-group {
+    color: white;
+}
+
+.show-member-invited-group-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--body_background);
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.requested-friend-group-button {
+    background-color: rgb(182, 182, 182);
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.leave-group-button {
+    background-color: red;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.leave-group-button:hover {
+    background-color: rgb(204, 0, 0);
+}
+
+.file-container {
+    width: 100%;
+    height: auto;
+    background-color: var(--body_container);
+    border-radius: 10px;
+}
+
+.file-header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    color: var(--font_color);
+}
+
+.file-header-search-and-upload {
+    display: flex;
+    gap: 1rem;
+}
+
+.file-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.file-body-title, .file-body-body {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    gap: 1rem;
+    margin: 1rem auto 0rem auto;
+}
+
+.link-file-group {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.file-group-button {
+    background-color: rgb(182, 182, 182);
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.file-body-details, .file-body-details-name {
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    cursor: pointer;
+    padding: 0.5rem 0rem;
+}
+
+.file-body-details-name:hover {
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    padding: 0.5rem 0rem;
+}
+
+.file-body-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.file-mapping {
+    display: flex;
+    color: var(--font_color);
+}
+
+.people-mapping-user-request {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}

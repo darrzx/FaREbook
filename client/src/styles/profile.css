@@ -1,0 +1,137 @@
+.profile-container {
+    background-color: var(--body_container);
+}
+
+.profile-container-head {
+    background-color: var(--body_container);
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.profile-cover-photo {
+    height: 250px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.profile-user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    margin-top: -40px;
+}
+
+.profile-user-personal {
+    display: flex;
+    align-items: center;
+}
+
+.profile-user-image {
+    justify-content: flex-start;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-size: cover;
+    border: 3px solid white;
+}
+
+.profile-user-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-user-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color: var(--font_color);
+}
+
+.profile-user-friendcount {
+    margin-top: 0.2rem;
+    color: #65676b; 
+}
+
+.profile-user-suggestions {
+    border-top: 1.5px solid #e5e5e5;  
+    border-bottom: 1.5px solid #e5e5e5;  
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    max-width: 100%; 
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.profile-suggestions-detail {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+}
+
+.profile-user-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.profile-user-buttons {
+    display: flex;
+    gap: 1rem;
+    color: var(--font_color);
+}
+
+.profile-user-button {
+    padding: 1rem 1rem;
+    cursor: pointer;
+}
+
+.profile-user-button-active {
+    background-color: var(--active-background);
+    color: var(--active-button);
+    border-radius: 5px;
+    padding: 1rem 1rem;
+}
+
+.profile-container-body {
+    background-color: var(--body_background);
+    height: 100%;
+    margin-top: 1rem;
+    padding: 3rem 15rem;
+}
+
+.reelsuser-main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.profile-show-friends {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.post-header-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delete-post {
+    cursor: pointer;
+}
+
+.header-detail-post {
+    display: flex;
+    align-items: center;
+}

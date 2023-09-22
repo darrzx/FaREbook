@@ -1,0 +1,33 @@
+:root{
+  --body_background: #f0f2f5;
+  --body_container: #fff;
+  --border: #ccc;
+  --font_color: black;
+  --font_color_reverse: white;
+  --hover: #f0f2f5;
+  --active-background: #d8d8d8;
+  --hover_home: #e3e3e3;
+  --active-button: #1877f2;
+}
+
+[data-theme="dark"] {
+  --body_background: #18191A;
+  --body_container: #242526;
+  --border: rgb(77, 77, 77);
+  --font_color: white;
+  --font_color_reverse: black;
+  --hover: #343434;
+  --active-background: #343434;
+  --hover_home: #343434;
+  --active-button: #1877f2;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  transition: all 0.15s ease-in-out;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}

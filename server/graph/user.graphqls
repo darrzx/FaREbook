@@ -1,0 +1,40 @@
+type User {
+    id: ID!
+    firstname: String!
+    surname: String!
+    email: String!
+    dob: String!
+    gender: String!
+    profilepic: String!
+    isActive: Boolean!
+}
+
+input NewUser {
+    firstname: String!
+    surname: String!
+    email: String!
+    dob: String!
+    gender: String!
+    password: String!
+    profilepic: String!
+    isActive: Boolean!
+}
+
+type Query {
+    getUser(id:ID!): User!
+    getAllUser: [User!]!
+    findAccount(email: String!): User!
+    getAllUserByName(name: String): [User!]!
+}
+
+type Mutation {
+    createUser(inputUser: NewUser!): User!
+    updateUser(id:ID!, inputUser: NewUser!): User!
+    updateUserProfilepic(id:ID!, profilepic: String!): User!
+    deleteUser(id:ID!): User!
+    login(email: String!, password: String!): String!
+    verifyAccount(id:ID!): Boolean!
+    getUserIdByToken(token: String!): User!
+    checkOldAndNewPassword(id:ID!, password: String!): Boolean!
+    resetPassword(id:ID!, password: String!): User!
+}

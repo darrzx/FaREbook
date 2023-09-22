@@ -1,0 +1,8 @@
+.story {
+    display: none;
+}
+
+.story-active {
+    display: flex;
+    width: 10px;
+}

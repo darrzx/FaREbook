@@ -1,0 +1,28 @@
+type File {
+    id: ID!
+    groupid: String!
+    filename: String!
+    mediaurl: String!
+    userid: String!
+    ownername: String!
+    date: String!
+    filetype: String!
+}
+
+input NewFile {
+    groupid: String!
+    filename: String!
+    mediaurl: String!
+    userid: String!
+    ownername: String!
+    filetype: String!
+}
+
+extend type Query {
+    getFile(id:ID!): File!
+    getAllFileByGroupId(groupid:ID!, name: String): [File!]!
+}
+
+extend type Mutation {
+    createFile(inputFile: NewFile!): File!
+}

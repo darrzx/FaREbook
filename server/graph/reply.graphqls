@@ -1,0 +1,23 @@
+type ReplyPost{
+    id: ID!
+    commentid: String!
+    userid: String!
+    username: String!
+    replycomment: String!
+    date: String!
+}
+
+input NewReplyPost{
+    commentid: String!
+    userid: String!
+    username: String!
+    replycomment: String!
+}
+
+extend type Query {
+  getAllReplyByCommentId(id: ID!): [ReplyPost!]!
+}
+
+extend type Mutation {
+  createReply(inputReplyPost: NewReplyPost!): ReplyPost!
+}

@@ -1,0 +1,251 @@
+.story-container {
+    display: flex;
+    justify-content: center;
+    background-color: var(--body_background);
+    height: 100vh;
+}
+
+.story-left-sidebar {
+    flex: 1;
+    padding: 20px;
+    width: 20%;
+    background-color: var(--body_container);
+}
+
+.sidebar-header h2{
+    color: var(--font_color);
+}
+
+.icon-info {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.close-button-story {
+    background-color: rgb(196, 196, 196);
+    border: none;
+    border-radius: 50%;
+    width: 2.3rem;
+    height: 2.3rem;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sidebar-people-story {
+    margin-top: 20px;
+}
+
+.story-person{
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.story-person h3{
+    color: var(--font_color);
+}
+
+.sidebar-curruser {
+    margin-top: 20px;
+}
+
+.story-icon-profile{
+    text-decoration: none;
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+.story-main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-radius: 10px;
+    background-color: var(--body_background);
+}
+
+.create-photo-story {
+    background: linear-gradient(to bottom right, #6449ed, #87cefe);
+    width: 15%;
+    height: 40%;
+    border-radius: 20px;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.create-text-story {
+    background: linear-gradient(to bottom, #9f46cd, #bf50af, #d74d7e);
+    width: 15%;
+    height: 40%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.create-photo-header {
+    text-align: center;
+    color: white;
+}
+
+.create-text-header {
+    text-align: center;
+    color: white;
+}
+
+.media-input {
+    display: none;
+}
+
+.selected-photo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--body_container);    
+    border-radius: 20px;
+    height: 80%;
+    width: 60%;
+}
+
+.selected-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--body_container);    
+}
+
+.selected-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--body_container);    
+    flex-direction: column;
+    border-radius: 20px;
+    height: 80%;
+    width: 60%;
+}
+
+.selected-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--body_background);
+    height: 85%;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.selected-text-header {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.selected-text-header h2 {
+    color: var(--font_color);
+}
+
+.selected-photo img {
+    max-width: 50%;
+}
+
+.story-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.story-button-discard {
+    background-color: rgb(231, 231, 231);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.story-button-share {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.text-story-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+.text-area-story {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; 
+    min-height: 100px;
+    background-color: var(--body_container);
+    color: var(--font_color);
+}
+
+.dropdown-menu-story {
+    width: 100%;
+}
+
+.dropdown-menu-inside {
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: var(--body_container);
+    color: var(--font_color);
+}
+
+.story-color-picker {
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px 10px;
+    margin-top: 10px;
+}
+
+.colors-header {
+    margin-bottom: 10px;
+    color: var(--font_color);
+}
+
+.colors-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.selected-color {
+    border: 2px solid black;
+}
+
+.text-story-preview {
+    width: 40%;
+    height: 90%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

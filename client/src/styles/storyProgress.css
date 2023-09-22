@@ -1,0 +1,10 @@
+.progress-bar-story {
+    width: 100%;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.progress-bar-progress {
+    height: 10px;
+    border-radius: 10px;
+}

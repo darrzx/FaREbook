@@ -1,0 +1,40 @@
+.footer-container {
+    background-color: #fff;
+    height: 20vh;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #65676b;
+    font-size: 12px;
+}
+
+.footer-language {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-links span a {
+    text-decoration: none;
+    color: #65676b; 
+}
+
+.footer-copy {
+    display: flex;
+}
+
+.footer-language span:hover, .footer-links span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

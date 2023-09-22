@@ -1,0 +1,62 @@
+type Post {
+  id: ID!
+  userid: String!
+  username: String!
+  date: String!
+  text: String!
+  privacy: String!
+  commentcount: Int!
+  likecount: Int!
+}
+
+type MediaPost{
+    id: ID!
+    postid: String!
+    media: String!
+}
+
+type CommentPost{
+    id: ID!
+    postid: String!
+    userid: String!
+    username: String!
+    comment: String!
+    date: String!
+    replycount: Int!
+    likecommentcount: Int!
+}
+
+input NewPost {
+  userid: String!
+  username: String!
+  text: String!
+  privacy: String!
+}
+
+input NewMediaPost{
+  postid: String!
+  media: String!
+}
+
+input NewCommentPost{
+  postid: String!
+  userid: String!
+  username: String!
+  comment: String!
+}
+
+extend type Query {
+  getPost(id: ID!): Post!
+  getAllPost(offset: Int, limit: Int): [Post!]!
+  getAllMediaByPostId(id: ID!): [MediaPost!]!
+  getAllCommentByPostId(id: ID!): [CommentPost!]!
+  getAllPostByName(offset: Int, limit: Int, name: String): [Post!]!
+  getAllPostByUserId(userid: ID!): [Post!]!
+}
+
+extend type Mutation {
+  createPost(inputPost: NewPost!, medias: [String!]!): Post!
+  createMediaPost(inputMediaPost: NewMediaPost!): MediaPost!
+  createCommentPost(inputCommentPost: NewCommentPost!): CommentPost!
+  deletePost(id:ID!): Post!
+}
