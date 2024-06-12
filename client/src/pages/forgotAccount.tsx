@@ -33,7 +33,6 @@ export function ForgotAccount() {
     e.preventDefault();
 
     if(data){
-        console.log(data.findAccount.id)
         const Params = {
             from_name: data.findAccount.firstname + " " + data.findAccount.surname,
             message: 'http://127.0.0.1:5173/resetPassword/'+data.findAccount.id,
