@@ -23,6 +23,8 @@ export function ForgotAccount() {
     variables: { email },
   })
 
+  console.log(data)
+
   const handleCancel = () => {
     window.location.href = '/login'
   };
@@ -30,7 +32,6 @@ export function ForgotAccount() {
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    console.log(data)
     if(data){
         console.log(data.findAccount.id)
         const Params = {

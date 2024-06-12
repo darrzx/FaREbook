@@ -29,6 +29,7 @@ const DarkMode = () => {
     }
 
     const toggleTheme = (e: any) => {
+        // console.log(e.target.checked)
         if(e.target.checked) {
             setDarkMode();
         } 
@@ -44,7 +45,7 @@ const DarkMode = () => {
                 type='checkbox'
                 id='darkmode-toggle'
                 onChange={toggleTheme}
-                defaultChecked={selectedTheme === "dark"}
+                // defaultChecked={selectedTheme === "dark"}
             />
             <label className='dark_mode_label' htmlFor='darkmode-toggle'>
                 
